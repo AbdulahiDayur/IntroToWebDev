@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CODE-ALONG: Click to Add Items</h1>
+      <form
+        name="numberFun"
+        class="needs-validation"
+        onsubmit="return validate();"
+        onreset="resetView();"
+        novalidate
+      >
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="num1">Num 1</label>
+            <input type="number" class="form-control" id="num1" required />
+            <div class="invalid-feedback">
+              Num 1 is required and must be a number.
+            </div>
+          </div>
+          <!-- end .form-group -->
+          <div class="form-group col">
+            <label for="num2">Num 2</label>
+            <input type="number" class="form-control" id="num2" required />
+            <div class="invalid-feedback">
+              Num 2 is required and must be a number.
+            </div>
+          </div>
+          <!-- end .form-group -->
+        </div>
+        <!-- end .form-row -->
+
+        <div class="form-row">
+          <div class="form-group col">
+            <button type="submit" id="submitButton" class="btn btn-primary">
+              Calculate
+            </button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </div>
+        </div>
+        <!-- end .form-row -->
+      </form>
+    </div>
+    <script src="clickToAddItems.js"></script>
+  </body>
+</html>
